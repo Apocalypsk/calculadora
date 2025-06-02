@@ -6,6 +6,15 @@ public class ExpressaoAlgebrica {
     private Double segundoValor;
     private OperacaoAlgebrica operacao;
 
+    public ExpressaoAlgebrica() {
+        
+    }
+
+    public ExpressaoAlgebrica( ExpressaoAlgebrica expressao ) {
+        this.setOperacao(expressao.getOperacao());
+        this.setPrimeiroValor(expressao.getPrimeiroValor());
+        this.setSegundoValor(expressao.getSegundoValor());
+    }
     
     public Double getPrimeiroValor() {
         return primeiroValor;
