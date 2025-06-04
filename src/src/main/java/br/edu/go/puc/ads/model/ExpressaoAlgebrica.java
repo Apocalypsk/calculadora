@@ -16,6 +16,12 @@ public class ExpressaoAlgebrica {
         this.setSegundoValor(expressao.getSegundoValor());
     }
     
+    public ExpressaoAlgebrica( OperacaoAlgebrica opercao,  Double primeiroValor, Double segundoValor ){
+        this.setOperacao(opercao);
+        this.setPrimeiroValor(primeiroValor);
+        this.setSegundoValor(segundoValor);
+    }
+
     public Double getPrimeiroValor() {
         return primeiroValor;
     }
