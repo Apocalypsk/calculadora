@@ -32,7 +32,7 @@ class CalculadoraControllerTest {
     @Test
     void testDividir() {
         CalculadoraController calculadora = new CalculadoraController();
-        double resultado = calculadora.Somar(16.0, 2.0);
+        double resultado = calculadora.dividir(16.0, 2.0);
         assertEquals(8.0, resultado, "A divisão deveria ser 8.0");
     }
 
