@@ -5,11 +5,18 @@ import br.edu.go.puc.ads.model.OperacaoAlgebrica;
 
 public class Subtracao {
 
-        public Subtracao() {
+    public Subtracao() {
         this.expressao = new ExpressaoAlgebrica();
         this.expressao.setOperacao(OperacaoAlgebrica.SUBTRACAO);
         this.expressao.setPrimeiroValor(0.0);
         this.expressao.setSegundoValor(0.0);
+    }
+
+    public Subtracao(Double primeiroValor, Double segundoValor) {
+        this.expressao = new ExpressaoAlgebrica();
+        this.expressao.setOperacao(OperacaoAlgebrica.SUBTRACAO);
+        this.expressao.setPrimeiroValor(primeiroValor);
+        this.expressao.setSegundoValor(segundoValor);
     }
 
     public Subtracao( ExpressaoAlgebrica expressao ){
