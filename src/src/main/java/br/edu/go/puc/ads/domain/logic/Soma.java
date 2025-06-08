@@ -14,6 +14,13 @@ public class Soma {
         this.expressao.setSegundoValor(0.0);
     }
 
+    public Soma( Double primeiroValor, Double segundoValor ) {
+        this.expressao = new ExpressaoAlgebrica();
+        this.expressao.setOperacao(OperacaoAlgebrica.SOMA);
+        this.expressao.setPrimeiroValor(primeiroValor);
+        this.expressao.setSegundoValor(segundoValor);
+    }
+
     public Soma( ExpressaoAlgebrica expressao ){
         this.expressao = new ExpressaoAlgebrica(expressao);
     }
