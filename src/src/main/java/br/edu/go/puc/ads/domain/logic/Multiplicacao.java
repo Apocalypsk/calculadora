@@ -5,7 +5,7 @@ import br.edu.go.puc.ads.model.OperacaoAlgebrica;
 
 public class Multiplicacao {
 
-        public Multiplicacao() {
+    public Multiplicacao() {
         this.expressao = new ExpressaoAlgebrica();
         this.expressao.setOperacao(OperacaoAlgebrica.MULTIPLICACAO);
         this.expressao.setPrimeiroValor(0.0);
