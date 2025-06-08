@@ -1,5 +1,7 @@
 package br.edu.go.puc.ads;
 
+import br.edu.go.puc.ads.view.CalculadoraView;
+
 /**
  *
  * @author Kathleen Faria 🌻
@@ -7,6 +9,6 @@ package br.edu.go.puc.ads;
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        CalculadoraView.iniciar();
     }
 }
