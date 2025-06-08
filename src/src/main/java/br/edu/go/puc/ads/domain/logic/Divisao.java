@@ -33,15 +33,22 @@ public class Divisao {
         this.expressao = expressao;
     }
 
-
-    public boolean podeDivir(){
-        return this.expressao.getPrimeiroValor() != 0;
-    }
-
     public Double getDivisao(){
 
-        Double resultado = this.expressao.getPrimeiroValor() / this.expressao.getSegundoValor();
-    
+        Double resultado = null;
+
+        try {
+            
+            resultado = this.expressao.getPrimeiroValor() / this.expressao.getSegundoValor() ;
+
+            if( Double.isInfinite(resultado) ){
+                throw new ArithmeticException("Erro: divisão por zero gerou um valor infinito!");
+            }
+            
+        } catch (ArithmeticException e) {
+            System.err.println(e.getMessage());
+        }
+
         return resultado; 
     }
 
