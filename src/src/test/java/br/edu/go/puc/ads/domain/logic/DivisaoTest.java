@@ -59,8 +59,9 @@ public class DivisaoTest {
 
     @Test
     void testDividirZeroPorZero(){
+        
         Divisao divisao = new Divisao(0.0, 0.0);
-
+         
         assertThrows(ArithmeticException.class, () -> {
             divisao.getDivisao(); // Deve lançar a exceção
         });
