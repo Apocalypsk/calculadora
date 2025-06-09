@@ -2,7 +2,7 @@
 *Este projeto visa testar conceitos básicos de desenvolvimento de software, versionamento de código e testes de software(unitários e funcionais).*
 
 
-## Como esse projeto foi consturido :
+## Como esse projeto foi construído :
 
 - Java
 - Maven
