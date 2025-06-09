@@ -46,7 +46,7 @@ Obrigado por usar a Calculadora! Até mais!
 ## Detalhes do projeto
 
 
-- Essa é a estrutura básica do projeto, onde o pacote doamin\logic contem classes que 
+- Essa é a estrutura básica do projeto, onde o pacote domain\logic contem classes que 
 devem interagir com as operações. Foi feito dessa forma para poder desacoplar o projeto.
 
 ![O Projeto](src/resources/o-projeto.png)
